@@ -19,11 +19,11 @@ app.get('/', async ({query, request}, response) => {
 			const oauthResult = await fetch('https://discord.com/api/oauth2/token', {
 				method: 'POST',
 				body: new URLSearchParams({
-					client_id: "910394836186701834",
-					client_secret: "JTC5Fl6wyvU5tmKoGDofP07ODnM2Wkq1",
+					client_id: "[REDACTED]",
+					client_secret: "[REDACTED]",
 					code,
 					grant_type: 'authorization_code',
-					redirect_uri: "http://64.138.225.33:3000",
+					redirect_uri: "[REDACTED]",
 					scope: 'identify', 
 					state: ''
 				}),
